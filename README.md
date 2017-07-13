@@ -13,3 +13,11 @@ Now you are able to start your vue.js project by running `npm i && npm run dev`
 
 For docker users:
 `docker-compose up`
+
+
+## Section 2
+Introducing the [todoMVC template](https://github.com/tastejs/todomvc-app-template).
+
+```bash
+$ npm install --save todomvc-app-css todomvc-common
+```
