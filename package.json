@@ -5,8 +5,8 @@
   "author": "Xiang Zhang <xmzhang@thoughtworks.com>",
   "private": true,
   "scripts": {
-    "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
-    "serve": "http-server -o -c 1 -a localhost",
+    "watchify": "watchify -vd -p [ browserify-hmr -p 3123 -h 0.0.0.0] -e src/main.js -o dist/build.js",
+    "serve": "http-server -p 8080 -o -c 1 -a 0.0.0.0",
     "dev": "npm-run-all --parallel watchify serve",
     "lint": "eslint --ext .js,.vue src test/unit",
     "test": "karma start karma.conf.js",
